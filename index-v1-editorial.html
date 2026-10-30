@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orizon by Srijan — 3 BHK Homes off Southern EM Bypass, Kolkata</title>
+<meta name="description" content="Orizon by Srijan Realty: 3 BHK residences on 8.3 acres with 80% open space, a 33,000 sq.ft. clubhouse and IGBC Platinum pre-certification, off Southern EM Bypass near Rathala More, Kolkata.">
+<link rel="icon" href="img/emblem.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,50;1,9..144,300..400,50&family=Jost:wght@300..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#231418; --plum-2:#33202a; --aubergine:#3b2346;
+  --rose:#cda69f; --blush:#e8cfc6; --blush-2:#f3e6e0;
+  --ivory:#f6f1ec; --sand:#e9e4dd; --ink:#2a1a1f; --muted:#6e5c60;
+  --line:rgba(42,26,31,.14); --line-dark:rgba(232,207,198,.18);
+  --serif:"Fraunces",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --gutter:clamp(20px,5vw,72px); --max:1320px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+
+/* type */
+.eyebrow{font:500 12.5px/1.4 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:14px;margin:0 0 22px}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
+.dark .eyebrow{color:var(--rose)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;margin:0;font-variation-settings:"SOFT" 50}
+h2{font-size:clamp(34px,4.4vw,58px);line-height:1.08;letter-spacing:-.015em;font-weight:330}
+h2 em,h1 em{font-style:italic;font-weight:300;color:var(--rose)}
+.light h2 em{color:#9a6f69}
+h3{font-size:clamp(21px,2vw,26px);line-height:1.25;font-weight:400}
+.lead{font-size:clamp(17px,1.4vw,19px);color:var(--muted);max-width:58ch;margin:24px 0 0}
+.dark .lead{color:rgba(243,230,224,.78);font-weight:300}
+.num{font-family:var(--serif);font-weight:300;font-variation-settings:"opsz" 144;font-variant-numeric:lining-nums;line-height:1}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border:1px solid currentColor;border-radius:999px;background:none;color:inherit;font:500 12.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .35s var(--ease),color .35s var(--ease),border-color .35s}
+.btn:hover{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.dark .btn:hover,.btn.on-dark:hover{background:var(--blush);color:var(--plum);border-color:var(--blush)}
+.btn.solid{background:var(--rose);border-color:var(--rose);color:var(--plum)}
+.btn.solid:hover{background:var(--blush);border-color:var(--blush);color:var(--plum)}
+.btn svg{width:14px;height:14px}
+
+/* logo via mask so it takes currentColor */
+.logo{display:block;aspect-ratio:452/336;background:currentColor;-webkit-mask:url(img/logo.svg) center/contain no-repeat;mask:url(img/logo.svg) center/contain no-repeat}
+.emblem{display:block;aspect-ratio:1;background:currentColor;-webkit-mask:url(img/emblem.svg) center/contain no-repeat;mask:url(img/emblem.svg) center/contain no-repeat}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;color:var(--blush-2);transition:background .4s var(--ease),box-shadow .4s,padding .4s;padding:18px 0}
+.hdr.scrolled{background:rgba(35,20,24,.94);backdrop-filter:blur(10px);padding:10px 0;box-shadow:0 1px 0 var(--line-dark)}
+.hdr .wrap{display:flex;align-items:center;gap:32px;max-width:1480px}
+.hdr .logo{width:86px;color:var(--blush);flex:none;transition:width .4s}
+.hdr.scrolled .logo{width:70px}
+.nav{display:flex;gap:30px;margin-left:auto}
+.nav a{font:500 12.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;opacity:.85;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--rose);transition:right .35s var(--ease)}
+.nav a:hover{opacity:1}.nav a:hover::after{right:0}
+.hdr-cta{display:flex;align-items:center;gap:18px}
+.hdr-cta .tel{font:500 13px/1 var(--sans);letter-spacing:.08em;text-decoration:none;white-space:nowrap}
+.hdr .btn{padding:12px 22px}
+.burger{display:none;background:none;border:0;color:inherit;width:40px;height:40px;padding:8px;margin-left:auto}
+.burger span{display:block;height:1px;background:currentColor;margin:6px 0;transition:transform .3s}
+.burger[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}
+.burger[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;color:var(--blush-2);background:var(--plum);overflow:hidden}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,20,24,.72) 0%,rgba(35,20,24,.35) 45%,rgba(35,20,24,0) 70%),linear-gradient(180deg,rgba(35,20,24,.6) 0%,rgba(35,20,24,.05) 28%,rgba(35,20,24,.2) 60%,rgba(35,20,24,.92) 100%)}
+.hero-in{position:relative;z-index:2;padding-top:140px;padding-bottom:48px;width:100%}
+.hero .eyebrow{color:var(--blush)}
+.hero h1{font-size:clamp(46px,8vw,120px);line-height:.98;letter-spacing:-.025em;font-variation-settings:"opsz" 144,"SOFT" 50;max-width:11ch}
+.hero p.sub{font-weight:300;font-size:clamp(17px,1.5vw,20px);max-width:44ch;margin:26px 0 34px;color:rgba(243,230,224,.85)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px}
+.facts{position:relative;z-index:2;border-top:1px solid var(--line-dark);background:rgba(35,20,24,.55);backdrop-filter:blur(6px)}
+.facts ul{list-style:none;margin:0 auto;padding:0 var(--gutter);display:grid;grid-template-columns:repeat(6,1fr);max-width:1480px}
+.facts li{padding:24px 18px 24px 0;border-right:1px solid var(--line-dark)}
+.facts li:last-child{border:0}
+.facts li+li{padding-left:22px}
+.facts .num{font-size:clamp(28px,2.6vw,40px);color:var(--blush-2)}
+.facts small{display:block;margin-top:8px;font:500 11px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+
+/* sections */
+section{position:relative}
+.pad{padding:clamp(80px,11vw,150px) 0}
+.dark{background:var(--plum);color:var(--blush-2)}
+.light{background:var(--ivory)}
+.blush{background:var(--blush-2)}
+.sand{background:var(--sand)}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px 80px;align-items:end;margin-bottom:clamp(44px,6vw,80px)}
+.head .lead{margin:0}
+
+/* intro */
+.intro{overflow:hidden}
+.intro .watermark{position:absolute;right:-12vw;top:-6vw;width:62vw;max-width:900px;aspect-ratio:1450/1414;background:var(--rose);opacity:.09;-webkit-mask:url(img/emblem-big.svg) center/contain no-repeat;mask:url(img/emblem-big.svg) center/contain no-repeat;pointer-events:none}
+.intro-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,110px);align-items:center}
+.intro h2{max-width:13ch}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.pillars div{text-align:center;font:500 11.5px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+.pillars .emblem{width:54px;margin:0 auto 16px;color:var(--rose)}
+.intro figure{margin:0;position:relative}
+.intro figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+.intro figure .tag{position:absolute;left:-28px;bottom:36px;background:var(--blush);color:var(--plum);padding:22px 26px;max-width:240px}
+.intro figure .tag .num{font-size:52px}
+.intro figure .tag small{display:block;font:500 11px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;margin-top:6px}
+
+/* why */
+.why{color:var(--blush-2);overflow:hidden}
+.why .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(35,20,24,.94) 0%,rgba(35,20,24,.86) 55%,rgba(35,20,24,.74) 100%);z-index:1}
+.why .wrap{position:relative;z-index:2}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-dark)}
+.why-grid article{padding:38px 36px 40px 0;border-bottom:1px solid var(--line-dark)}
+.why-grid article:not(:nth-child(3n)){border-right:1px solid var(--line-dark)}
+.why-grid article:not(:nth-child(3n+1)){padding-left:36px}
+.why-grid .k{font:500 11px/1 var(--sans);letter-spacing:.22em;color:var(--rose)}
+.why-grid h3{margin:18px 0 12px}
+.why-grid p{margin:0;font-weight:300;color:rgba(243,230,224,.75);font-size:16px}
+
+/* landscape carousel */
+.rail-wrap{position:relative}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--gutter) 10px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.rail figure{flex:0 0 min(72vw,820px);margin:0;scroll-snap-align:start;cursor:zoom-in}
+.rail figure:first-child{margin-left:max(0px,calc((100vw - var(--max))/2))}
+.rail img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform 1.2s var(--ease)}
+.rail .ph{overflow:hidden}
+.rail figure:hover img{transform:scale(1.04)}
+.rail figcaption{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;font-family:var(--serif);font-size:22px}
+.rail figcaption small{font:500 11px/1 var(--sans);letter-spacing:.2em;color:var(--muted)}
+.rail-ctrl{display:flex;gap:10px}
+.rail-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink);display:grid;place-items:center;transition:background .3s,color .3s}
+.rail-ctrl button:hover{background:var(--ink);color:var(--ivory)}
+.rail-ctrl svg{width:18px}
+
+/* club */
+.club-top{display:grid;grid-template-columns:7fr 5fr;gap:clamp(30px,5vw,80px);align-items:end}
+.club-top img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:36px 30px;margin-top:40px}
+.stats .num{font-size:clamp(46px,5vw,72px);color:var(--blush)}
+.stats small{display:block;margin-top:10px;font:500 11px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+.club-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(180px,20vw,290px);gap:14px;margin-top:clamp(40px,6vw,70px)}
+.tile{position:relative;overflow:hidden;margin:0;cursor:zoom-in}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.tile:hover img{transform:scale(1.05)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 16px;background:linear-gradient(transparent,rgba(35,20,24,.8));font:500 11.5px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--blush-2)}
+.t1{grid-column:span 7;grid-row:span 2}.t2{grid-column:span 5}.t3{grid-column:span 5}
+.t4{grid-column:span 4}.t5{grid-column:span 4}.t6{grid-column:span 4}
+
+/* amenities */
+.tabs{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px;flex-wrap:wrap}
+.tabs button{border:0;background:none;border-radius:999px;padding:12px 22px;font:500 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);transition:background .3s,color .3s}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--ivory)}
+.amen-list{columns:4 220px;column-gap:40px;list-style:none;padding:0;margin:44px 0 0}
+.amen-list li{break-inside:avoid;padding:14px 0;border-bottom:1px solid var(--line);font-size:16px;display:flex;gap:14px;align-items:baseline}
+.amen-list li::before{content:"";width:6px;height:6px;border:1px solid #9a6f69;border-radius:50%;flex:none;transform:translateY(-2px)}
+
+/* residences */
+.res-hero{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:clamp(60px,8vw,110px)}
+.res-hero figure{margin:0;position:relative;overflow:hidden}
+.res-hero img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.res-hero figcaption{position:absolute;left:20px;bottom:16px;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.plans{display:grid;grid-template-columns:380px 1fr;gap:clamp(30px,4vw,60px);align-items:start}
+.plan-side .tabs{margin-bottom:26px}
+.types{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:28px}
+.types button{aspect-ratio:1;border:1px solid var(--line);background:none;font-family:var(--serif);font-size:22px;color:var(--ink);border-radius:2px;transition:all .3s}
+.types button:hover{border-color:var(--ink)}
+.types button[aria-pressed=true]{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.spec-card{border-top:1px solid var(--ink)}
+.spec-card h3{font-size:34px;padding:22px 0 4px}
+.spec-card .cfg{font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#9a6f69;margin:0 0 18px}
+.spec-card dl{margin:0;display:grid;grid-template-columns:1fr auto}
+.spec-card dt,.spec-card dd{padding:14px 0;border-bottom:1px solid var(--line);margin:0}
+.spec-card dt{color:var(--muted);font-size:15px}
+.spec-card dd{font-family:var(--serif);font-size:20px;text-align:right}
+.spec-card dd small{font:400 13px var(--sans);color:var(--muted)}
+.spec-card .note{font-size:13.5px;color:var(--muted);margin:16px 0 26px;line-height:1.55}
+.spec-card .btn{width:100%;justify-content:center}
+.plan-view{background:var(--sand);padding:clamp(16px,2vw,28px);position:relative}
+.plan-view img{width:100%;cursor:zoom-in;transition:opacity .35s}
+.plan-view .hint{position:absolute;right:18px;top:16px;font:500 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.plan-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.plan-links .btn{padding:13px 20px}
+.cfg-table{width:100%;border-collapse:collapse;margin-top:clamp(50px,6vw,80px);font-size:15.5px}
+.cfg-table caption{text-align:left;font:500 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);padding-bottom:18px}
+.cfg-table th{font:500 11px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);text-align:left;padding:14px 12px;border-bottom:1px solid var(--ink)}
+.cfg-table td{padding:16px 12px;border-bottom:1px solid var(--line)}
+.cfg-table td.n{font-family:var(--serif);font-size:19px}
+.cfg-table tr:hover td{background:rgba(205,166,159,.12)}
+.cfg-table .link{background:none;border:0;padding:0;font:500 11.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#9a6f69;border-bottom:1px solid currentColor;padding-bottom:3px}
+.tscroll{overflow-x:auto}
+
+/* master plan */
+.mp{display:grid;grid-template-columns:4fr 7fr;gap:clamp(30px,5vw,80px);align-items:center}
+.mp figure{margin:0;background:#fff;padding:14px;cursor:zoom-in}
+
+/* location */
+.loc-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(30px,4vw,60px)}
+.map-img{background:#fff;padding:10px;cursor:zoom-in}
+.gmap{width:100%;height:100%;min-height:360px;border:0;filter:grayscale(.35) contrast(1.05)}
+.dist{margin-top:clamp(40px,5vw,70px);display:grid;grid-template-columns:repeat(4,1fr);gap:0 36px}
+.dist h3{font-size:20px;padding-bottom:14px;border-bottom:1px solid var(--line-dark);margin-bottom:6px}
+.dist ul{list-style:none;padding:0;margin:0}
+.dist li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line-dark);font-size:15px;font-weight:300;color:rgba(243,230,224,.85)}
+.dist li b{font-family:var(--serif);font-weight:400;color:var(--blush);white-space:nowrap}
+.quick{display:flex;gap:40px;margin-top:30px}
+.quick div .num{font-size:56px;color:var(--blush)}
+.quick small{display:block;font:500 11px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-top:8px}
+
+/* inclusivity & green */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}
+.split figure{margin:0}
+.split figure img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.feat{list-style:none;padding:0;margin:40px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+.feat li{padding:20px 0;border-top:1px solid var(--line)}
+.dark .feat li{border-color:var(--line-dark)}
+.feat b{display:block;font-family:var(--serif);font-weight:400;font-size:19px;margin-bottom:6px}
+.feat span{font-size:15px;color:var(--muted);line-height:1.55;display:block}
+.dark .feat span{color:rgba(243,230,224,.7);font-weight:300}
+.green{background:#eef0e6}
+.green .leaf img{width:100%;aspect-ratio:auto}
+.green .badge{display:inline-flex;align-items:center;gap:14px;margin-top:30px;padding:14px 20px;border:1px solid #6d7d4e;color:#4f5c36;font:500 11.5px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.green h2 em{color:#6d7d4e}
+.green .eyebrow{color:#5f6d43}
+
+/* film */
+.film{position:relative;min-height:80vh;display:grid;place-items:center;text-align:center;color:var(--blush-2);overflow:hidden;background:var(--plum)}
+.film img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.6;transition:transform 2s var(--ease)}
+.film:hover img{transform:scale(1.04)}
+.film .in{position:relative;z-index:2;padding:80px var(--gutter)}
+.play{width:104px;height:104px;border-radius:50%;border:1px solid var(--blush);background:rgba(35,20,24,.3);backdrop-filter:blur(4px);color:var(--blush);display:grid;place-items:center;margin:0 auto 32px;transition:transform .4s var(--ease),background .4s}
+.play:hover{transform:scale(1.08);background:var(--blush);color:var(--plum)}
+.play svg{width:26px;margin-left:5px}
+.film h2{max-width:16ch;margin:0 auto}
+
+/* gallery */
+.gal{columns:3 280px;column-gap:14px}
+.gal figure{margin:0 0 14px;break-inside:avoid;overflow:hidden;cursor:zoom-in}
+.gal img{width:100%;transition:transform 1.2s var(--ease)}
+.gal figure:hover img{transform:scale(1.04)}
+
+/* specs */
+.acc details{border-top:1px solid var(--line)}
+.acc details:last-child{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:26px 0;font-family:var(--serif);font-size:clamp(21px,2vw,26px)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font:300 30px/1 var(--sans);transition:transform .3s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc ul{columns:2 260px;column-gap:40px;margin:0 0 30px;padding:0;list-style:none}
+.acc li{padding:8px 0;font-size:15.5px;color:var(--muted);break-inside:avoid}
+.acc li b{color:var(--ink);font-weight:500}
+
+/* developer */
+.dev{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,100px);align-items:center}
+.dev .num{font-size:clamp(110px,14vw,200px);color:var(--rose);line-height:.85}
+.portfolio{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.portfolio span{border:1px solid var(--line-dark);padding:10px 18px;border-radius:999px;font:500 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--blush)}
+.team{margin-top:28px;font-size:15px;color:rgba(243,230,224,.7);font-weight:300}
+.team b{color:var(--blush-2);font-weight:500}
+
+/* contact */
+.contact{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,6vw,100px)}
+.addr{margin-top:40px;display:grid;gap:26px}
+.addr h4{margin:0 0 6px;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#9a6f69}
+.addr p{margin:0;font-size:16px}
+.addr a{text-decoration:none;border-bottom:1px solid var(--line)}
+form.lead-form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{font:400 17px/1.4 var(--sans);color:var(--ink);background:transparent;border:0;border-bottom:1px solid rgba(42,26,31,.3);padding:12px 0;border-radius:0;outline:none;transition:border-color .3s;width:100%}
+.field textarea{resize:vertical;min-height:90px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ink)}
+.field input:user-invalid{border-color:#b0413e}
+.consent{grid-column:1/-1;display:flex;gap:12px;font-size:13px;color:var(--muted);line-height:1.5}
+.consent input{accent-color:var(--ink);margin-top:3px}
+.form-ok{display:none;grid-column:1/-1;padding:22px;background:var(--blush-2);font-size:15.5px}
+.form-ok.show{display:block}
+.form-ok a{font-weight:500}
+
+/* footer */
+footer{background:#1a0f12;color:rgba(243,230,224,.6);padding:80px 0 120px;font-size:13px}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
+footer .logo{width:120px;color:var(--rose)}
+footer nav{display:flex;gap:26px;flex-wrap:wrap}
+footer nav a{text-decoration:none;font:500 11.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--blush)}
+.rera{margin:30px 0 18px;color:var(--blush);letter-spacing:.06em}
+.disc{font-size:12px;line-height:1.7;max-width:110ch;margin:0}
+
+/* sticky mobile bar */
+.mbar{display:none}
+
+/* dialogs */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none}
+dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
+.lb{width:100vw;height:100vh;color:#fff}
+.lb[open]{display:grid;place-items:center}
+.lb img{max-width:94vw;max-height:84vh;object-fit:contain;background:var(--sand)}
+.lb img.photo{background:none}
+.lb .cap{position:fixed;left:0;right:0;bottom:22px;text-align:center;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--blush)}
+.x{position:fixed;top:18px;right:20px;width:50px;height:50px;border-radius:50%;border:1px solid rgba(243,230,224,.4);background:rgba(35,20,24,.6);color:var(--blush-2);font-size:24px;line-height:1;z-index:3}
+.lb .nav-b{position:fixed;top:50%;translate:0 -50%;width:54px;height:54px;border-radius:50%;border:1px solid rgba(243,230,224,.4);background:rgba(35,20,24,.6);color:var(--blush-2);font-size:22px}
+.lb .prev{left:18px}.lb .next{right:18px}
+.vid{width:min(1200px,94vw)}
+.vid video{width:100%;aspect-ratio:16/9;background:#000}
+.enq{width:min(560px,94vw);background:var(--ivory);color:var(--ink);padding:clamp(28px,4vw,48px);position:relative;max-height:94vh;overflow:auto}
+.enq h3{font-size:32px;margin-bottom:8px}
+.enq p.s{color:var(--muted);margin:0 0 26px;font-size:15px}
+.enq .x{position:absolute;top:14px;right:14px;background:none;color:var(--ink);border-color:var(--line);width:42px;height:42px}
+.enq form.lead-form{grid-template-columns:1fr}
+.promise{display:flex;justify-content:space-between;gap:10px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font:500 10.5px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#9a6f69;text-align:center}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* responsive */
+@media (max-width:1180px){
+  .nav,.hdr-cta .tel{display:none}
+  .burger{display:block}
+  .hdr-cta{margin-left:auto}
+  .nav.open{display:flex;position:fixed;inset:0;background:var(--plum);flex-direction:column;justify-content:center;align-items:center;gap:28px;z-index:-1}
+  .nav.open a{font-size:15px}
+  .facts ul{grid-template-columns:repeat(3,1fr)}
+  .facts li:nth-child(3){border-right:0}
+  .facts li:nth-child(4){padding-left:0}
+  .facts li:nth-child(-n+3){border-bottom:1px solid var(--line-dark)}
+  .plans{grid-template-columns:1fr}
+  .dist{grid-template-columns:1fr 1fr;gap:30px 36px}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .head,.intro-grid,.club-top,.mp,.loc-grid,.split,.dev,.contact{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .why-grid article{padding:28px 0!important;border-right:0!important}
+  .pillars{grid-template-columns:repeat(2,1fr);gap:30px 18px}
+  .intro figure .tag{left:12px;bottom:12px}
+  .club-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .t1{grid-column:span 2;grid-row:span 1}.t2,.t3,.t4,.t5,.t6{grid-column:span 1}
+  .res-hero{grid-template-columns:1fr}
+  .feat{grid-template-columns:1fr}
+  .split.rev figure{order:-1}
+  .rail figure{flex-basis:84vw}
+  .hdr-cta .btn{display:none}
+  form.lead-form{grid-template-columns:1fr}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--plum);border-top:1px solid var(--line-dark)}
+  .mbar a,.mbar button{padding:17px;text-align:center;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--blush-2);text-decoration:none;background:none;border:0}
+  .mbar button{background:var(--rose);color:var(--plum)}
+  .gmap{min-height:300px}
+}
+@media (max-width:560px){
+  .facts ul{grid-template-columns:1fr 1fr}
+  .facts li{padding:18px 12px 18px 0!important;border-right:0!important;border-bottom:1px solid var(--line-dark)}
+  .facts li:nth-child(odd){border-right:1px solid var(--line-dark)!important}
+  .facts li:nth-child(even){padding-left:16px!important}
+  .facts li:nth-last-child(-n+2){border-bottom:0}
+  .dist{grid-template-columns:1fr}
+  .types{grid-template-columns:repeat(6,1fr);gap:6px}
+  .types button{font-size:18px}
+  .quick{gap:28px}
+  .hero .ctas .btn{flex:1;justify-content:center;padding:16px 10px;letter-spacing:.1em;white-space:nowrap;font-size:11.5px}
+  .promise{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#top" aria-label="Orizon home"><span class="logo"></span></a>
+    <nav class="nav" id="nav">
+      <a href="#overview">Overview</a>
+      <a href="#landscape">Landscape</a>
+      <a href="#club">Clubhouse</a>
+      <a href="#residences">Residences</a>
+      <a href="#location">Location</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="tel" href="tel:+917901659385">+91 79016 59385</a>
+      <button class="btn on-dark" data-enquire="Book a Site Visit">Enquire</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img class="poster" src="video/hero-poster.jpg" alt="">
+  <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+    <source src="video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-in wrap">
+    <p class="eyebrow">Srijan Realty · Off Southern EM Bypass, Kolkata</p>
+    <h1>A life beyond the <em>ordinary</em></h1>
+    <p class="sub">Three-side open 3 BHK residences across 8.3 acres, where more of the land is given to greens and sky than to buildings.</p>
+    <div class="ctas">
+      <button class="btn solid" data-enquire="Book a Site Visit">Book a site visit</button>
+      <button class="btn on-dark" data-enquire="Download Brochure">Download brochure</button>
+    </div>
+  </div>
+  <div class="facts">
+    <ul>
+      <li><span class="num">8.3</span><small>Acres of land</small></li>
+      <li><span class="num">80%</span><small>Open space</small></li>
+      <li><span class="num">6</span><small>High-rise towers</small></li>
+      <li><span class="num">702</span><small>3 BHK homes</small></li>
+      <li><span class="num">33K</span><small>Sq.ft. clubhouse</small></li>
+      <li><span class="num">2031</span><small>Possession · per RERA</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="intro dark pad" id="overview">
+  <div class="watermark"></div>
+  <div class="wrap intro-grid">
+    <div class="rv">
+      <p class="eyebrow">Overview</p>
+      <h2>A space defined by <em>openness</em></h2>
+      <p class="lead">Orizon sits in the calm of wide greens and the golden light that fills your home. Six towers on 8.3 acres, designed around the horizon, so mornings linger and evenings last a little longer.</p>
+      <div class="pillars">
+        <div><span class="emblem"></span>Open horizon</div>
+        <div><span class="emblem"></span>Elevated lifestyle</div>
+        <div><span class="emblem"></span>Abundant greens</div>
+        <div><span class="emblem"></span>Limitless possibilities</div>
+      </div>
+    </div>
+    <figure class="rv">
+      <img src="img/aerial-wide.webp" alt="Aerial view of Orizon's six towers surrounded by greenery" loading="lazy">
+      <div class="tag"><span class="num">IGBC</span><small>Platinum pre-certified green project</small></div>
+    </figure>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why pad">
+  <img class="bg" src="img/towers-dusk.webp" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Why Orizon</p><h2>Six reasons to <em>call it home</em></h2></div>
+      <p class="lead">From a resort-scale clubhouse to barrier-free design, every part of Orizon is planned for an everyday good life, not just weekends.</p>
+    </div>
+    <div class="why-grid">
+      <article class="rv"><span class="k">01</span><h3>A new way of living takes shape</h3><p>More open than built. More greenery and sky than structure.</p></article>
+      <article class="rv"><span class="k">02</span><h3>Life finds its rhythm</h3><p>Terraces in the sky: generous open spaces where mornings linger and evenings last a little longer.</p></article>
+      <article class="rv"><span class="k">03</span><h3>Inclusivity at its best</h3><p>Inclusive, barrier-free design for smooth, independent movement for residents of every ability.</p></article>
+      <article class="rv"><span class="k">04</span><h3>Connectivity meets calm</h3><p>Dual entry off Southern EM Bypass makes every commute feel like a shortcut.</p></article>
+      <article class="rv"><span class="k">05</span><h3>Live larger than life</h3><p>A clubhouse that rivals a resort, and gardens suspended above the city.</p></article>
+      <article class="rv"><span class="k">06</span><h3>Two decades of legacy</h3><p>From the makers of Botanica, Ozone, Southwinds, Nirvana, Sherwood, Anubhoomi and Wood Square Mall.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- LANDSCAPE -->
+<section class="light pad" id="landscape">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Landscape</p><h2>More green, <em>less grey</em></h2></div>
+      <div>
+        <p class="lead">Spread across 8.3 acres with 80% open space, Orizon is built around a central lawn, a serene water body, an amphitheatre and quiet corners for every age.</p>
+        <div class="rail-ctrl" style="margin-top:28px">
+          <button data-rail="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button data-rail="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="rail" id="rail">
+    <figure data-lb><div class="ph"><img src="img/central-lawn.webp" alt="Central lawn" loading="lazy"></div><figcaption>Central lawn <small>01</small></figcaption></figure>
+    <figure data-lb><div class="ph"><img src="img/serene-water.webp" alt="Serene water" loading="lazy"></div><figcaption>Serene water <small>02</small></figcaption></figure>
+    <figure data-lb><div class="ph"><img src="img/amphitheatre.webp" alt="Amphitheatre" loading="lazy"></div><figcaption>Amphitheatre <small>03</small></figcaption></figure>
+    <figure data-lb><div class="ph"><img src="img/boomerang.webp" alt="Boomerang seating" loading="lazy"></div><figcaption>Boomerang seating <small>04</small></figcaption></figure>
+    <figure data-lb><div class="ph"><img src="img/pet-park.webp" alt="Pet park" loading="lazy"></div><figcaption>Pet park <small>05</small></figcaption></figure>
+    <figure data-lb><div class="ph"><img src="img/aerial-connect.webp" alt="Aerial view of Orizon towers" loading="lazy"></div><figcaption>Designed around the horizon <small>06</small></figcaption></figure>
+  </div>
+</section>
+
+<!-- CLUB -->
+<section class="dark pad" id="club">
+  <div class="wrap">
+    <div class="club-top">
+      <figure class="tile rv" data-lb style="margin:0"><img src="img/aerial-club.webp" alt="Aerial view of Orizon with podium garden and clubhouse" loading="lazy"></figure>
+      <div class="rv">
+        <p class="eyebrow">Clubhouse</p>
+        <h2>A clubhouse that <em>rivals a resort</em></h2>
+        <p class="lead">Life is elevated with a 33,000 sq.ft. clubhouse, an infinity pool with jacuzzi and kids' pool, and a 21,000 sq.ft. podium-level garden with an exclusive sports arena.</p>
+        <div class="stats">
+          <div><span class="num">33,000</span><small>Sq.ft. clubhouse</small></div>
+          <div><span class="num">21,000</span><small>Sq.ft. podium garden</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="club-grid">
+      <figure class="tile t1 rv" data-lb><img src="img/pool.webp" alt="Infinity pool, jacuzzi and kids' pool" loading="lazy"><figcaption>Infinity pool, jacuzzi &amp; kids' pool</figcaption></figure>
+      <figure class="tile t2 rv" data-lb><img src="img/podium.webp" alt="Podium-level garden with sports courts" loading="lazy"><figcaption>Podium-level garden</figcaption></figure>
+      <figure class="tile t3 rv" data-lb><img src="img/gym.webp" alt="Gym" loading="lazy"><figcaption>Gym</figcaption></figure>
+      <figure class="tile t4 rv" data-lb><img src="img/yoga.webp" alt="Yoga room" loading="lazy"><figcaption>Yoga room</figcaption></figure>
+      <figure class="tile t5 rv" data-lb><img src="img/squash.webp" alt="Squash court" loading="lazy"><figcaption>Squash court</figcaption></figure>
+      <figure class="tile t6 rv" data-lb><img src="img/lounge.webp" alt="Senior citizen room and library" loading="lazy"><figcaption>Senior citizen room &amp; library</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="blush pad" id="amenities">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Amenities</p><h2>65+ ways to <em>spend&nbsp;a&nbsp;day</em></h2></div>
+      <div>
+        <div class="tabs" role="tablist" id="amenTabs">
+          <button role="tab" aria-selected="true" data-k="outdoor">Outdoor</button>
+          <button role="tab" aria-selected="false" data-k="garden">Gardens &amp; leisure</button>
+          <button role="tab" aria-selected="false" data-k="club">Club indoor</button>
+        </div>
+      </div>
+    </div>
+    <ul class="amen-list" id="amenList"></ul>
+  </div>
+</section>
+
+<!-- RESIDENCES -->
+<section class="light pad" id="residences">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Residences</p><h2>Three-side open <em>3 BHK homes</em></h2></div>
+      <p class="lead">Spacious terrace-style balconies, standing balconies in rooms, and layouts that let light and air move freely. Towers 4 and 5 are now open.</p>
+    </div>
+    <div class="res-hero">
+      <figure class="rv" data-lb><img src="img/balcony.webp" alt="Terrace-style balcony with city view" loading="lazy"><figcaption>Terrace-style balcony</figcaption></figure>
+      <figure class="rv" data-lb><img src="img/bedroom.webp" alt="Bedroom with standing balcony" loading="lazy"><figcaption>Standing balcony in room</figcaption></figure>
+    </div>
+
+    <div class="plans">
+      <div class="plan-side rv">
+        <div class="tabs" role="tablist" id="towerTabs">
+          <button role="tab" aria-selected="true" data-t="t5">Tower 5 · G+22</button>
+          <button role="tab" aria-selected="false" data-t="t4">Tower 4 · G+23</button>
+        </div>
+        <div class="types" id="types"></div>
+        <div class="spec-card" id="specCard"></div>
+      </div>
+      <div class="rv">
+        <div class="plan-view"><span class="hint">Click to enlarge</span><img id="planImg" src="img/t5-a.webp" alt="Floor plan"></div>
+        <div class="plan-links">
+          <button class="btn" id="typBtn">Typical floor plan</button>
+          <button class="btn" data-lbsrc="img/master-plan.webp" data-cap="Master plan">Master plan</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tscroll rv">
+      <table class="cfg-table" id="cfgTable"></table>
+    </div>
+  </div>
+</section>
+
+<!-- MASTER PLAN -->
+<section class="sand pad">
+  <div class="wrap mp">
+    <div class="rv">
+      <p class="eyebrow">Master plan</p>
+      <h2>Planned around <em>the horizon</em></h2>
+      <p class="lead">Six towers frame a landscaped heart: ground-level gardens and trails, a podium garden with sports courts, and a resort-style club at the centre. Dual entry off Southern EM Bypass.</p>
+      <dl class="spec-card" style="margin-top:34px;display:grid;grid-template-columns:1fr auto">
+        <dt>Towers 1 &amp; 2</dt><dd>G+17</dd>
+        <dt>Towers 3 &amp; 4</dt><dd>G+23</dd>
+        <dt>Towers 5 &amp; 6</dt><dd>G+22</dd>
+        <dt>Lifts per tower</dt><dd>3 <small>incl. fire lift</small></dd>
+      </dl>
+    </div>
+    <figure class="rv" data-lb><img src="img/master-plan.webp" alt="Orizon master plan" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="dark pad" id="location">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Location</p><h2>Connected to the city, <em>away from the bustle</em></h2></div>
+      <div>
+        <p class="lead">76, B.C. Roy Road, Jagaddal, off Southern EM Bypass. Daily needs within minutes, schools and hospitals close by, and the metro a short drive away.</p>
+        <div class="quick">
+          <div><span class="num">2</span><small>Mins to Rathala More</small></div>
+          <div><span class="num">3</span><small>Mins to Jagaddal More</small></div>
+          <div><span class="num">4</span><small>Mins to Apollo (upcoming)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="loc-grid">
+      <figure class="map-img rv" data-lb style="margin:0"><img src="img/location-map.webp" alt="Orizon location map" loading="lazy"></figure>
+      <iframe class="gmap rv" title="Orizon site on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=76+B.C.+Roy+Road,+Jagaddal,+Sonarpur,+Kolkata+700151&z=14&output=embed"></iframe>
+    </div>
+    <div class="dist">
+      <div class="rv"><h3>Shopping &amp; daily needs</h3><ul>
+        <li>Jagaddal Math daily market<b>2 mins</b></li><li>Spencer's<b>5 mins</b></li><li>Rajpur Bazaar<b>6 mins</b></li><li>Wood Square Mall<b>6 mins</b></li><li>Southwinds Galleria (Reliance Smart)<b>6 mins</b></li></ul></div>
+      <div class="rv"><h3>Education</h3><ul>
+        <li>BDM International School<b>8 mins</b></li><li>Narayana School<b>8 mins</b></li><li>Indus Valley World School<b>17 mins</b></li><li>St. Xavier's College<b>19 mins</b></li><li>Heritage School, Ruby<b>24 mins</b></li></ul></div>
+      <div class="rv"><h3>Healthcare</h3><ul>
+        <li>Apollo Hospital (upcoming)<b>4 mins</b></li><li>Peerless Hospital<b>15 mins</b></li><li>RN Tagore Hospital<b>18 mins</b></li><li>Manipal Hospital (Medica)<b>20 mins</b></li><li>Desun Hospital<b>23 mins</b></li></ul></div>
+      <div class="rv"><h3>Transit &amp; leisure</h3><ul>
+        <li>Shahid Khudiram Metro<b>14 mins</b></li><li>Sonarpur Railway Station<b>15 mins</b></li><li>SVF Films, Wood Square<b>6 mins</b></li><li>Inox, Hiland Park<b>15 mins</b></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSIVITY -->
+<section class="light pad">
+  <div class="wrap split">
+    <figure class="rv" data-lb><img src="img/ramp.webp" alt="Wheelchair access ramp through landscaped greens" loading="lazy"></figure>
+    <div class="rv">
+      <p class="eyebrow">Inclusive design</p>
+      <h2>Built for <em>every ability</em></h2>
+      <p class="lead">Inclusivity is not an afterthought here. Barrier-free design lets residents of all abilities move freely, independently and with dignity.</p>
+      <ul class="feat">
+        <li><b>Wheelchair access ramps</b><span>Inclined planes alongside stairs in all common areas.</span></li>
+        <li><b>Wheelchair-friendly parking</b><span>Wider spots closest to entrances, with 5 ft access aisles.</span></li>
+        <li><b>Wide, accessible elevators</b><span>900–1100 mm doors; cabins at least 1 m × 1.25 m.</span></li>
+        <li><b>Braille &amp; voice-enabled lifts</b><span>Tactile buttons and audio feedback.</span></li>
+        <li><b>Accessible toilets</b><span>Wide-door common restrooms for mobility aids.</span></li>
+        <li><b>Easy-movement doors</b><span>Wider openings, minimal thresholds, accessible hardware.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GREEN -->
+<section class="green pad">
+  <div class="wrap split rev">
+    <div class="rv">
+      <p class="eyebrow">Sustainability</p>
+      <h2>Building for the <em>bigger purpose</em></h2>
+      <p class="lead">IGBC-aligned practices cut environmental impact while making everyday life more comfortable: 20–30% energy savings and 30–50% water savings from day one.</p>
+      <ul class="feat">
+        <li><b>Rainwater harvesting</b><span>Captures and reuses rainwater, recharging groundwater.</span></li>
+        <li><b>Solar power</b><span>Powers common areas, reducing energy use.</span></li>
+        <li><b>Waste management</b><span>Recycles water and turns organic waste into manure.</span></li>
+        <li><b>EV charging points</b><span>Ready for the shift to electric vehicles.</span></li>
+        <li><b>Energy-efficient lighting</b><span>LEDs that use up to 30% less energy.</span></li>
+        <li><b>Natural light &amp; air</b><span>Large windows for daylight and fresh air.</span></li>
+      </ul>
+      <span class="badge">IGBC Platinum · Pre-certified for design</span>
+    </div>
+    <figure class="leaf rv"><img src="img/igbc-leaf.webp" alt="Orizon on a green leaf, symbolising sustainable living" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- FILM -->
+<section class="film">
+  <img src="video/walkthrough-poster.jpg" alt="" loading="lazy">
+  <div class="in rv">
+    <button class="play" id="playFilm" aria-label="Play walkthrough film"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></button>
+    <p class="eyebrow" style="justify-content:center">Walkthrough film</p>
+    <h2>Step inside <em>Orizon</em></h2>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="light pad" id="gallery">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Gallery</p><h2>Moments at <em>Orizon</em></h2></div>
+      <p class="lead">Artist's impressions of the homes, gardens and club.</p>
+    </div>
+    <div class="gal" id="gal">
+      <figure data-lb><img src="img/tower-final.webp" alt="Orizon tower facade" loading="lazy"></figure>
+      <figure data-lb><img src="img/central-lawn.webp" alt="Central lawn" loading="lazy"></figure>
+      <figure data-lb><img src="img/intro.webp" alt="Residents in the gardens" loading="lazy"></figure>
+      <figure data-lb><img src="img/pool.webp" alt="Infinity pool" loading="lazy"></figure>
+      <figure data-lb><img src="img/serene-water.webp" alt="Serene water" loading="lazy"></figure>
+      <figure data-lb><img src="img/balcony.webp" alt="Terrace balcony" loading="lazy"></figure>
+      <figure data-lb><img src="img/boomerang.webp" alt="Boomerang seating" loading="lazy"></figure>
+      <figure data-lb><img src="img/aerial-wide.webp" alt="Aerial view" loading="lazy"></figure>
+      <figure data-lb><img src="img/lounge.webp" alt="Senior citizen lounge" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIFICATIONS -->
+<section class="sand pad" id="specs">
+  <div class="wrap">
+    <div class="head rv">
+      <div><p class="eyebrow">Specifications</p><h2>Made to <em>last</em></h2></div>
+      <p class="lead">Quality materials and thoughtful provisions in every home.</p>
+    </div>
+    <div class="acc rv">
+      <details open><summary>Structure &amp; finishes</summary><ul>
+        <li><b>Structure:</b> RCC frame</li><li><b>Exterior:</b> Weather-coat paint</li><li><b>Interior:</b> POP finish on walls and ceiling</li>
+        <li><b>Doors:</b> Flush doors with engineered wood frames</li><li><b>Windows:</b> Aluminium openable / sliding</li><li><b>Balcony door:</b> Aluminium sliding</li></ul></details>
+      <details><summary>Flooring</summary><ul>
+        <li><b>Rooms:</b> Vitrified tiles</li><li><b>Living / dining:</b> Vitrified tiles</li><li><b>Kitchen floor &amp; wall:</b> Vitrified tiles</li>
+        <li><b>Toilets:</b> Ceramic tiles (vitrified in premium and master toilets)</li></ul></details>
+      <details><summary>Kitchen &amp; toilets</summary><ul>
+        <li><b>Kitchen:</b> Stainless steel sink, water-filter point, chimney / exhaust provision</li><li><b>Sanitaryware:</b> Varmora or equivalent</li>
+        <li><b>CP fittings:</b> Jaquar / Hindware or equivalent</li><li><b>Shower:</b> 2100 mm glass cubicle, hot &amp; cold line</li></ul></details>
+      <details><summary>Electrical &amp; power</summary><ul>
+        <li><b>Wiring:</b> Concealed, with modular switches (Anchor / Kolors or equivalent)</li><li><b>AC:</b> Provision in all bedrooms and living</li>
+        <li><b>Power backup:</b> 1 KVA per 3 BHK for lights, fans and one refrigerator</li><li><b>Renewables:</b> Solar energy system</li></ul></details>
+      <details><summary>Safety, water &amp; parking</summary><ul>
+        <li><b>Security:</b> CCTV in common areas</li><li><b>Fire:</b> Fire-fighting and evacuation systems per norms</li>
+        <li><b>Water:</b> 24-hour filtered supply with treatment plant; borewell source</li><li><b>Lifts:</b> 3 per tower, including a dedicated fire lift</li>
+        <li><b>Parking:</b> Open and covered ground floor, multi-level and mechanical options</li></ul></details>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section class="dark pad">
+  <div class="wrap dev">
+    <div class="rv"><span class="num">20+</span><p class="eyebrow" style="margin-top:20px">Years of Srijan Realty</p></div>
+    <div class="rv">
+      <h2>Two decades of legacy, <em>and many more</em></h2>
+      <p class="lead">For over twenty years, Srijan Realty has shaped Kolkata's residential landscape on a simple belief: great homes are built on trust. Orizon carries that legacy forward.</p>
+      <div class="portfolio"><span>Botanica</span><span>Ozone</span><span>Southwinds</span><span>Nirvana</span><span>Sherwood</span><span>Anubhoomi</span><span>Wood Square Mall</span></div>
+      <p class="team"><b>Architects</b> Raj Agarwal &amp; Associates · <b>Landscape</b> Design Accord · <b>Structure</b> MNU Consultants</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="blush pad" id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <p class="eyebrow">Contact</p>
+      <h2>Your journey <em>begins here</em></h2>
+      <p class="lead">Share your details and our team will call you back to plan a site visit, share pricing and walk you through the plans.</p>
+      <div class="addr">
+        <div><h4>Give a missed call</h4><p><a href="tel:+917901659385">+91 79016 59385</a></p></div>
+        <div><h4>Site address</h4><p>76, B.C. Roy Road (Jagaddal), PS Sonarpur,<br>PO Dakshin Jagaddal, Kolkata 700151</p></div>
+        <div><h4>Corporate office</h4><p>Srijan House, 36/1A, Elgin Road, Kolkata 700020<br><a href="tel:+913340402020">033 4040 2020</a> · <a href="https://srijanrealty.com" target="_blank" rel="noopener">srijanrealty.com</a></p></div>
+      </div>
+    </div>
+    <div class="rv">
+      <form class="lead-form" novalidate>
+        <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-phone">Mobile</label><input id="f-phone" name="phone" type="tel" required pattern="[0-9+ \-]{10,15}" autocomplete="tel"></div>
+        <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label for="f-tower">Interested in</label><select id="f-tower" name="interest"><option>Tower 5 · 3 BHK + 2T</option><option>Tower 4 · 3 BHK + 3T</option><option>Tower 4 · 3 BHK + 3T + Servant</option><option>Not sure yet</option></select></div>
+        <div class="field"><label for="f-visit">Preferred visit date</label><input id="f-visit" name="visit" type="date"></div>
+        <div class="field full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Anything you'd like us to know"></textarea></div>
+        <label class="consent"><input type="checkbox" required checked> I agree to be contacted by Srijan Realty about Orizon by call, SMS, email or WhatsApp.</label>
+        <div><button class="btn" type="submit">Request a call back</button></div>
+        <div class="form-ok" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <span class="logo"></span>
+      <nav><a href="#overview">Overview</a><a href="#club">Clubhouse</a><a href="#residences">Residences</a><a href="#location">Location</a><a href="#specs">Specifications</a><a href="#contact">Contact</a></nav>
+    </div>
+    <p class="rera">Phase I · WBRERA/P/SOU/2026/004474 · <a href="https://rera.wb.gov.in" target="_blank" rel="noopener">rera.wb.gov.in</a></p>
+    <p class="disc">Pictures shown are artist's impressions for illustration only. The information, features, offerings and other details are indicative, and the developer / owner reserves the right to change any or all of them at its discretion, subject to approval from the relevant authorities. This website does not constitute an offer, an invitation to an offer or a commitment of any nature. Furniture and decorative items shown are not part of the offering. © Srijan Realty Pvt. Ltd.</p>
+  </div>
+</footer>
+
+<div class="mbar"><a href="tel:+917901659385">Call</a><button data-enquire="Book a Site Visit">Enquire</button></div>
+
+<!-- lightbox -->
+<dialog class="lb" id="lb">
+  <button class="x" data-close aria-label="Close">×</button>
+  <button class="nav-b prev" aria-label="Previous">‹</button>
+  <img alt="">
+  <button class="nav-b next" aria-label="Next">›</button>
+  <div class="cap"></div>
+</dialog>
+
+<!-- film -->
+<dialog class="vid" id="vid">
+  <button class="x" data-close aria-label="Close">×</button>
+  <video controls preload="none" poster="video/walkthrough-poster.jpg"><source src="video/walkthrough.mp4" type="video/mp4"></video>
+</dialog>
+
+<!-- enquiry -->
+<dialog class="enq" id="enq">
+  <button class="x" data-close aria-label="Close">×</button>
+  <span class="emblem" style="width:40px;color:#9a6f69;margin-bottom:18px"></span>
+  <h3 id="enqTitle">Book a Site Visit</h3>
+  <p class="s">Leave your details and we'll be in touch shortly.</p>
+  <form class="lead-form" novalidate>
+    <input type="hidden" name="intent">
+    <div class="field"><label for="e-name">Full name</label><input id="e-name" name="name" required autocomplete="name"></div>
+    <div class="field"><label for="e-phone">Mobile</label><input id="e-phone" name="phone" type="tel" required pattern="[0-9+ \-]{10,15}" autocomplete="tel"></div>
+    <div class="field"><label for="e-email">Email</label><input id="e-email" name="email" type="email" autocomplete="email"></div>
+    <label class="consent"><input type="checkbox" required checked> I agree to be contacted about Orizon.</label>
+    <div><button class="btn" type="submit" style="width:100%;justify-content:center">Submit</button></div>
+    <div class="form-ok" role="status"></div>
+  </form>
+  <div class="promise"><span>Instant call back</span><span>Free site visit</span><span>Best price</span></div>
+</dialog>
+
+<script>
+// Where enquiries go. Set to a Formspree / Google Apps Script / CRM webhook URL to receive leads.
+const FORM_ENDPOINT = "";
+
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+// header + mobile nav
+const hdr = $('#hdr'), nav = $('#nav'), burger = $('#burger');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 40), {passive: true});
+burger.onclick = () => { const o = nav.classList.toggle('open'); burger.setAttribute('aria-expanded', o); };
+$$('#nav a').forEach(a => a.onclick = () => nav.classList.remove('open'));
+
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin: '0px 0px -8% 0px'});
+$$('.rv').forEach(el => io.observe(el));
+
+// landscape rail
+$$('[data-rail]').forEach(b => b.onclick = () => { const r = $('#rail'); r.scrollBy({left: r.clientWidth * .6 * b.dataset.rail, behavior: 'smooth'}); });
+
+// amenities
+const AMEN = {
+  outdoor: ['Multipurpose court (cricket & football)','Badminton court','Pickleball','Half basketball court','Mini tennis court','Mini golf','Kids\' play area','Toddler zone','TotLot','Senior citizens\' corner','Outdoor fitness area','Outdoor yoga & meditation','Walkways, jogging & cycle track','Entry plaza & drop-off','Amphitheatre','Stage area','Stage for Puja','Pet park','Barbeque zone','Adda zone'],
+  garden: ['Central lawn','Flower garden','Aromatic garden','Herbal garden','Butterfly garden','Vertical garden','Fairy light garden','Forest trail','Willow den','Topiaries','Sculpture court','Water feature & fountain','Fish feeding','Viewing / lookout deck','Boomerang seating','Relaxation cabana','Pavilion','Star gazing','Graffiti & feature walls','Beautified gravel pathway','Seating corners'],
+  club: ['Club entrance lobby & reception','Banquet hall','Lounge','Café / bar lounge','Gym','Yoga & meditation room','Spa','Swimming pool','Kids\' pool','Jacuzzi','Deck','Squash court','Indoor games room','Virtual games room','Board games','Home theatre','Library','Co-working room','Guest room','Senior citizen room','Indoor kids\' playroom','Kids\' learning','Pottery, art & craft room','Smoking room']
+};
+const showAmen = k => { $('#amenList').innerHTML = AMEN[k].map(a => `<li>${a}</li>`).join(''); $$('#amenTabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.k === k)); };
+$$('#amenTabs button').forEach(b => b.onclick = () => showAmen(b.dataset.k));
+showAmen('outdoor');
+
+// residences: data from the Tower 4 / Tower 5 plan books (sq.ft.)
+const UNITS = {
+  t5: {name: 'Tower 5', floors: 'G+22', units: {
+    A: {cfg: '3 BHK + 2 Toilets', carpet: 818, sbua: 1343, alt: 'Type A on the 3rd floor comes with a private terrace (1,462 sq.ft.).'},
+    B: {cfg: '3 BHK + 2 Toilets', carpet: 766, sbua: 1236, alt: 'Type B on the 3rd floor comes with a private terrace (1,417 sq.ft.).'},
+    C: {cfg: '3 BHK + 2 Toilets', carpet: 900, sbua: 1469, alt: 'Type C on the 3rd floor comes with a private terrace (1,530 sq.ft.).'},
+    D: {cfg: '3 BHK + 2 Toilets', carpet: 900, sbua: 1469, alt: 'Type D on the 3rd floor comes with a private terrace (1,530 sq.ft.).'},
+    E: {cfg: '3 BHK + 2 Toilets', carpet: 766, sbua: 1236, alt: 'Type E on the 3rd floor comes with a private terrace (1,337 sq.ft.).'},
+    F: {cfg: '3 BHK + 2 Toilets', carpet: 903, sbua: 1464, alt: 'Type F on the 3rd floor comes with a private terrace (1,636 sq.ft.).'}}},
+  t4: {name: 'Tower 4', floors: 'G+23', units: {
+    A: {cfg: '3 BHK + 3 Toilets', carpet: 1002, sbua: 1615, alt: 'Type A on the 2nd floor includes a servant\'s quarter (1,751 sq.ft.).'},
+    B: {cfg: '3 BHK + 2 Toilets', carpet: 765, sbua: 1236, alt: 'Same layout on all floors from the 2nd to the 23rd.'},
+    C: {cfg: '3 BHK + 3 Toilets + S.Q.', carpet: 1063, sbua: 1842, alt: 'Type C on the 3rd floor comes with a private terrace (1,993 sq.ft.).'},
+    D: {cfg: '3 BHK + 3 Toilets + S.Q.', carpet: 1066, sbua: 1845, alt: 'Type D on the 3rd floor comes with a private terrace (1,976 sq.ft.).'},
+    E: {cfg: '3 BHK + 2 Toilets', carpet: 766, sbua: 1236, alt: 'Type E on the 2nd floor includes a servant\'s quarter (1,330 sq.ft.).'},
+    F: {cfg: '3 BHK + 3 Toilets + S.Q.', carpet: 1004, sbua: 1708, alt: 'Type F on the 2nd floor measures 1,754 sq.ft.'}}}
+};
+let tower = 't5', type = 'A';
+const fmt = n => n.toLocaleString('en-IN');
+function renderPlans() {
+  const T = UNITS[tower], u = T.units[type];
+  $$('#towerTabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.t === tower));
+  $('#types').innerHTML = Object.keys(T.units).map(k => `<button aria-pressed="${k === type}" data-k="${k}" aria-label="Type ${k}">${k}</button>`).join('');
+  $$('#types button').forEach(b => b.onclick = () => { type = b.dataset.k; renderPlans(); });
+  $('#specCard').innerHTML = `<h3>Type ${type}</h3><p class="cfg">${T.name} · ${u.cfg}</p>
+    <dl><dt>Carpet area (RERA)</dt><dd>${fmt(u.carpet)} <small>sq.ft.</small></dd>
+    <dt>Super built-up area</dt><dd>${fmt(u.sbua)} <small>sq.ft.</small></dd>
+    <dt>Tower height</dt><dd>${T.floors}</dd></dl>
+    <p class="note">${u.alt}</p>
+    <button class="btn" data-enquire="Price for ${T.name} Type ${type}">Get price breakup</button>`;
+  const img = $('#planImg'); img.style.opacity = .2;
+  img.onload = () => img.style.opacity = 1;
+  img.src = `img/${tower}-${type.toLowerCase()}.webp`; img.alt = `${T.name} Type ${type} floor plan`;
+  $('#typBtn').dataset.lbsrc = `img/${tower}-typical.webp`; $('#typBtn').dataset.cap = `${T.name} typical floor plan`;
+}
+$$('#towerTabs button').forEach(b => b.onclick = () => { tower = b.dataset.t; type = 'A'; renderPlans(); });
+renderPlans();
+$('#cfgTable').innerHTML = `<caption>Configurations on offer</caption>
+  <thead><tr><th>Tower</th><th>Type</th><th>Configuration</th><th>Carpet (RERA)</th><th>Super built-up</th><th>Price</th></tr></thead><tbody>` +
+  Object.entries(UNITS).flatMap(([tk, T]) => Object.entries(T.units).map(([k, u]) =>
+    `<tr><td>${T.name}</td><td class="n">${k}</td><td>${u.cfg}</td><td class="n">${fmt(u.carpet)} sq.ft.</td><td class="n">${fmt(u.sbua)} sq.ft.</td><td><button class="link" data-enquire="Price for ${T.name} Type ${k}">On request</button></td></tr>`)).join('') + '</tbody>';
+
+// dialogs
+$$('dialog').forEach(d => { d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-close]')) d.close(); }); });
+const enq = $('#enq');
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-enquire]'); if (!b) return;
+  $('#enqTitle').textContent = b.dataset.enquire; enq.querySelector('[name=intent]').value = b.dataset.enquire;
+  enq.querySelector('.form-ok').classList.remove('show'); enq.showModal();
+});
+
+// lightbox: every [data-lb] image becomes a slide; [data-lbsrc] buttons open a single image
+const lb = $('#lb'), lbImg = $('img', lb), lbCap = $('.cap', lb);
+let slides = [], idx = 0;
+const show = i => { idx = (i + slides.length) % slides.length; const s = slides[idx]; lbImg.src = s.src; lbImg.className = s.photo ? 'photo' : ''; lbCap.textContent = s.cap || ''; $$('.nav-b', lb).forEach(n => n.hidden = slides.length < 2); };
+document.addEventListener('click', e => {
+  const fig = e.target.closest('[data-lb]');
+  if (fig) { const group = $$('[data-lb]', fig.closest('section'));
+    slides = group.map(f => { const im = $('img', f); return {src: im.currentSrc || im.src, cap: im.alt, photo: !f.matches('.map-img,.mp figure')}; });
+    show(group.indexOf(fig)); lb.showModal(); return; }
+  const one = e.target.closest('[data-lbsrc]') || (e.target.id === 'planImg' && e.target);
+  if (one) { slides = [{src: one.dataset.lbsrc || one.src, cap: one.dataset.cap || one.alt}]; show(0); lb.showModal(); }
+});
+$('.prev', lb).onclick = () => show(idx - 1); $('.next', lb).onclick = () => show(idx + 1);
+lb.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') show(idx - 1); if (e.key === 'ArrowRight') show(idx + 1); });
+
+// film
+const vid = $('#vid'), film = $('video', vid);
+$('#playFilm').onclick = () => { vid.showModal(); film.play(); };
+vid.addEventListener('close', () => film.pause());
+
+// lead forms
+$$('form.lead-form').forEach(f => f.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!f.checkValidity()) { f.reportValidity(); return; }
+  const data = Object.fromEntries(new FormData(f)); data.page = location.href; data.at = new Date().toISOString();
+  const ok = f.querySelector('.form-ok'), btn = f.querySelector('[type=submit]');
+  btn.disabled = true;
+  try {
+    if (FORM_ENDPOINT) { const r = await fetch(FORM_ENDPOINT, {method: 'POST', headers: {'Content-Type': 'application/json', Accept: 'application/json'}, body: JSON.stringify(data)}); if (!r.ok) throw 0; }
+    else { try { const k = 'orizon-leads', a = JSON.parse(localStorage.getItem(k) || '[]'); a.push(data); localStorage.setItem(k, JSON.stringify(a)); } catch {} }
+    ok.innerHTML = `Thank you, ${data.name.split(' ')[0]}. Our team will call you shortly.` + (/brochure/i.test(data.intent || '') ? ' <a href="brochure/Orizon_Brochure.pdf" download>Download the brochure</a>.' : '');
+    f.reset();
+  } catch { ok.textContent = 'Something went wrong. Please give us a missed call on +91 79016 59385.'; }
+  ok.classList.add('show'); btn.disabled = false;
+}));
+</script>
+</body>
+</html>

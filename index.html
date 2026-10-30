@@ -38,6 +38,17 @@ header .logo{height:54px;color:#2a1a1f}
 .menu a{display:block;padding:10px 8px;font-weight:600;color:#000;text-transform:capitalize}
 .menu a:hover{color:var(--maroon)}
 .menu .fa-phone{margin-right:6px}
+.menu .phones{display:flex;align-items:center;font-weight:600;white-space:nowrap}
+.menu .phones a{padding:10px 2px}
+.menu .phones span{margin:0 4px;color:#999}
+.menu .phones div{display:flex;align-items:center}
+@media (min-width:992px) and (max-width:1239px){
+  .menu{gap:6px}
+  .menu a{white-space:nowrap}
+  .menu .phones div{flex-direction:column;align-items:flex-start;font-size:14px;line-height:1.3}
+  .menu .phones a{padding:0}
+  .menu .phones span{display:none}
+}
 .toggler{display:none;background:none;border:1px solid rgba(0,0,0,.15);border-radius:6px;width:52px;height:40px;font-size:20px;color:#333}
 
 /* banner */
@@ -260,7 +271,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
       <li><a href="#floor-plan">Floor Plan</a></li>
       <li><a href="#location-highlights">Location</a></li>
       <li><a href="#contact-us">Contact Us</a></li>
-      <li><a href="tel:+918431708383"><i class="fa fa-phone"></i>+91 84317 08383</a></li>
+      <li class="phones"><i class="fa fa-phone"></i><div><a href="tel:+918431708383">+91 84317 08383</a><span>/</span><a href="tel:+918444911007">+91 84449 11007</a></div></li>
     </ul>
   </div>
 </header>
@@ -461,7 +472,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
     <p>Orizon carries this legacy forward, rooted in experience, guided by responsibility, and designed for the future. Architects: Raj Agarwal &amp; Associates · Landscape: Design Accord · Structure: MNU Consultants.</p>
     <p><b>Site address :</b> 76, B.C. Roy Road (Jagaddal), PS Sonarpur, PO Dakshin Jagaddal, Kolkata 700151</p>
     <p><b>WBRERA Registration : Phase I - WBRERA/P/SOU/2026/004474; details available at https://rera.wb.gov.in</b></p>
-    <p><b>Project Enquiry - </b><a href="tel:+918431708383"><i class="fa fa-phone"></i> +91 84317 08383</a></p>
+    <p><b>Project Enquiry - </b><i class="fa fa-phone"></i> <a href="tel:+918431708383">+91 84317 08383</a> &nbsp;/&nbsp; <a href="tel:+918444911007">+91 84449 11007</a></p>
   </div>
 </section>
 
@@ -491,7 +502,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
     <p class="disc" id="disclaimer">Disclaimer: Pictures shown are artist's impressions for illustration only. The information, features, offerings and other details are indicative, and the developer / owner reserves the right to change any or all of them at its discretion, subject to approval from the relevant authorities. This website does not constitute an offer, an invitation to an offer or a commitment of any nature. Furniture and decorative items shown are not part of the offering.</p>
   </div>
 </footer>
-<div class="copy">© Copyright 2026 Srijan Realty Pvt. Ltd. &nbsp;| &nbsp;<a href="#disclaimer">Disclaimer</a> &nbsp;| &nbsp;RERA Registration No: WBRERA/P/SOU/2026/004474</div>
+<div class="copy">© Copyright 2026 Srijan Realty Pvt. Ltd. &nbsp;| &nbsp;<a href="#disclaimer">Disclaimer</a> &nbsp;| &nbsp;RERA Registration No: WBRERA/P/SOU/2026/004474<br>Monotosh Sarkar &ndash; Authorised Marketing Partner &nbsp;| &nbsp;RERA No: RERA/A/SOU/2025/000652</div>
 
 <button class="side-tab" data-enquire="Request Site Visit">Request Site Visit</button>
 <a class="wa" href="https://wa.me/918431708383?text=Hi%2C%20I%27m%20interested%20in%20Srijan%20Orizon.%20Please%20share%20details." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -528,7 +539,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
       <ul id="enqList"><li>Available Units</li><li>Payment Plan</li><li>Floor Plans</li></ul>
     </div>
   </div>
-  <div class="m-phone"><a href="tel:+918431708383"><i class="fa fa-phone"></i> +91 84317 08383</a></div>
+  <div class="m-phone"><i class="fa fa-phone"></i> <a href="tel:+918431708383">+91 84317 08383</a> &nbsp;/&nbsp; <a href="tel:+918444911007">+91 84449 11007</a></div>
 </dialog>
 
 <dialog class="lb" id="lb">
@@ -649,7 +660,7 @@ $$('form.lead-form').forEach(f => f.addEventListener('submit', async e => {
     else { try { const k = 'orizon-leads', a = JSON.parse(localStorage.getItem(k) || '[]'); a.push(data); localStorage.setItem(k, JSON.stringify(a)); } catch {} }
     ok.innerHTML = `Thank you, ${data.name.split(' ')[0]}! Our team will call you shortly.` + (/brochure/i.test(data.intent || '') ? ' <a href="brochure/Orizon_Brochure.pdf" download style="text-decoration:underline">Download the brochure</a>' : '');
     f.reset();
-  } catch { ok.textContent = 'Something went wrong. Please call +91 84317 08383.'; }
+  } catch { ok.textContent = 'Something went wrong. Please call +91 84317 08383 or +91 84449 11007.'; }
   ok.classList.add('show'); btn.disabled = false;
 }));
 </script>

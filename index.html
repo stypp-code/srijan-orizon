@@ -648,11 +648,14 @@ $$('form.lead-form').forEach(f => f.addEventListener('submit', async e => {
   const ok = f.querySelector('.form-ok'), btn = f.querySelector('[type=submit]');
   btn.disabled = true;
   try {
-    // Lead goes to WhatsApp, details pre-filled. Opened synchronously so popup blockers allow it.
-    const msg = ['Hi, I am interested in Srijan Orizon.', `Enquiry: ${data.intent || 'General'}`, `Name: ${data.name}`, `Mobile: ${data.phone}`, `Email: ${data.email}`, data.interest && `Interested in: ${data.interest}`].filter(Boolean).join('\n');
-    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
     const isBrochure = /brochure/i.test(data.intent || '');
-    ok.textContent = `Thank you, ${data.name.split(' ')[0]}! Our team will call you shortly.` + (isBrochure ? ' Your brochure is downloading. ' : '');
+    // Enquiries go to WhatsApp with details pre-filled (opened synchronously so popup blockers allow it).
+    // The brochure form only downloads the PDF.
+    if (!isBrochure) {
+      const msg = ['Hi, I am interested in Srijan Orizon.', `Enquiry: ${data.intent || 'General'}`, `Name: ${data.name}`, `Mobile: ${data.phone}`, `Email: ${data.email}`, data.interest && `Interested in: ${data.interest}`].filter(Boolean).join('\n');
+      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    }
+    ok.textContent = `Thank you, ${data.name.split(' ')[0]}! ` + (isBrochure ? 'Your brochure is downloading. ' : 'Our team will call you shortly.');
     if (isBrochure) {
       const a = Object.assign(document.createElement('a'), {href: 'brochure/Orizon_Brochure.pdf', download: 'Orizon_Brochure.pdf', textContent: 'Not started? Click here.'});
       a.style.textDecoration = 'underline'; ok.append(a); a.click();

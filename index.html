@@ -548,8 +548,8 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 </dialog>
 
 <script>
-// Where enquiries go. Set to a Formspree / Google Apps Script / CRM webhook URL to receive leads.
-const FORM_ENDPOINT = "";
+// Enquiries are sent to this WhatsApp number (country code, no +).
+const WHATSAPP = "918444911007";
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 // mobile menu, back to top
@@ -644,13 +644,19 @@ vid.addEventListener('close', () => film.pause());
 $$('form.lead-form').forEach(f => f.addEventListener('submit', async e => {
   e.preventDefault();
   if (!f.checkValidity()) { f.reportValidity(); return; }
-  const data = Object.fromEntries(new FormData(f)); data.page = location.href; data.at = new Date().toISOString();
+  const data = Object.fromEntries(new FormData(f));
   const ok = f.querySelector('.form-ok'), btn = f.querySelector('[type=submit]');
   btn.disabled = true;
   try {
-    if (FORM_ENDPOINT) { const r = await fetch(FORM_ENDPOINT, {method: 'POST', headers: {'Content-Type': 'application/json', Accept: 'application/json'}, body: JSON.stringify(data)}); if (!r.ok) throw 0; }
-    else { try { const k = 'orizon-leads', a = JSON.parse(localStorage.getItem(k) || '[]'); a.push(data); localStorage.setItem(k, JSON.stringify(a)); } catch {} }
-    ok.innerHTML = `Thank you, ${data.name.split(' ')[0]}! Our team will call you shortly.` + (/brochure/i.test(data.intent || '') ? ' <a href="brochure/Orizon_Brochure.pdf" download style="text-decoration:underline">Download the brochure</a>' : '');
+    // Lead goes to WhatsApp, details pre-filled. Opened synchronously so popup blockers allow it.
+    const msg = ['Hi, I am interested in Srijan Orizon.', `Enquiry: ${data.intent || 'General'}`, `Name: ${data.name}`, `Mobile: ${data.phone}`, `Email: ${data.email}`, data.interest && `Interested in: ${data.interest}`].filter(Boolean).join('\n');
+    window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    const isBrochure = /brochure/i.test(data.intent || '');
+    ok.textContent = `Thank you, ${data.name.split(' ')[0]}! Our team will call you shortly.` + (isBrochure ? ' Your brochure is downloading. ' : '');
+    if (isBrochure) {
+      const a = Object.assign(document.createElement('a'), {href: 'brochure/Orizon_Brochure.pdf', download: 'Orizon_Brochure.pdf', textContent: 'Not started? Click here.'});
+      a.style.textDecoration = 'underline'; ok.append(a); a.click();
+    }
     f.reset();
   } catch { ok.textContent = 'Something went wrong. Please call +91 84449 11007.'; }
   ok.classList.add('show'); btn.disabled = false;

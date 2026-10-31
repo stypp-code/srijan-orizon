@@ -386,7 +386,7 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
       <a href="#contact">Contact</a>
     </nav>
     <div class="hdr-cta">
-      <a class="tel" href="tel:+918431708383">+91 84317 08383</a>
+      <a class="tel" href="tel:+918444911007">+91 84449 11007</a>
       <button class="btn on-dark" data-enquire="Book a Site Visit">Enquire</button>
     </div>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
@@ -397,9 +397,9 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
 
 <!-- HERO -->
 <section class="hero">
-  <img class="poster" src="video/hero-poster.jpg" alt="">
-  <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
-    <source src="video/hero.mp4" type="video/mp4">
+  <img class="poster" src="video/hero-poster.webp" alt="">
+  <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.webp">
+    <source src="video/hero.webm" type="video/webm">
   </video>
   <div class="hero-in wrap">
     <p class="eyebrow">Srijan Realty · Off Southern EM Bypass, Kolkata</p>
@@ -658,7 +658,7 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
 
 <!-- FILM -->
 <section class="film">
-  <img src="video/walkthrough-poster.jpg" alt="" loading="lazy">
+  <img src="video/walkthrough-poster.webp" alt="" loading="lazy">
   <div class="in rv">
     <button class="play" id="playFilm" aria-label="Play walkthrough film"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></button>
     <p class="eyebrow" style="justify-content:center">Walkthrough film</p>
@@ -736,7 +736,7 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
       <h2>Your journey <em>begins here</em></h2>
       <p class="lead">Share your details and our team will call you back to plan a site visit, share pricing and walk you through the plans.</p>
       <div class="addr">
-        <div><h4>Give a missed call</h4><p><a href="tel:+918431708383">+91 84317 08383</a></p></div>
+        <div><h4>Give a missed call</h4><p><a href="tel:+918444911007">+91 84449 11007</a></p></div>
         <div><h4>Site address</h4><p>76, B.C. Roy Road (Jagaddal), PS Sonarpur,<br>PO Dakshin Jagaddal, Kolkata 700151</p></div>
       </div>
     </div>
@@ -769,7 +769,7 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
   </div>
 </footer>
 
-<div class="mbar"><a href="tel:+918431708383">Call</a><button data-enquire="Book a Site Visit">Enquire</button></div>
+<div class="mbar"><a href="tel:+918444911007">Call</a><button data-enquire="Book a Site Visit">Enquire</button></div>
 
 <!-- lightbox -->
 <dialog class="lb" id="lb">
@@ -783,7 +783,7 @@ dialog::backdrop{background:rgba(26,15,18,.88);backdrop-filter:blur(4px)}
 <!-- film -->
 <dialog class="vid" id="vid">
   <button class="x" data-close aria-label="Close">×</button>
-  <video controls preload="none" poster="video/walkthrough-poster.jpg"><source src="video/walkthrough.mp4" type="video/mp4"></video>
+  <video controls preload="none" poster="video/walkthrough-poster.webp"><source src="video/walkthrough.webm" type="video/webm"></video>
 </dialog>
 
 <!-- enquiry -->
@@ -916,7 +916,7 @@ $$('form.lead-form').forEach(f => f.addEventListener('submit', async e => {
     else { try { const k = 'orizon-leads', a = JSON.parse(localStorage.getItem(k) || '[]'); a.push(data); localStorage.setItem(k, JSON.stringify(a)); } catch {} }
     ok.innerHTML = `Thank you, ${data.name.split(' ')[0]}. Our team will call you shortly.` + (/brochure/i.test(data.intent || '') ? ' <a href="brochure/Orizon_Brochure.pdf" download>Download the brochure</a>.' : '');
     f.reset();
-  } catch { ok.textContent = 'Something went wrong. Please give us a missed call on +91 84317 08383.'; }
+  } catch { ok.textContent = 'Something went wrong. Please give us a missed call on +91 84449 11007.'; }
   ok.classList.add('show'); btn.disabled = false;
 }));
 </script>
